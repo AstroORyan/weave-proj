@@ -1,0 +1,49 @@
+CNAME - Coordinate Name, assigned by WASP.
+TARGSRVY - Essentially the proposal ID. Used in naming the filename.
+TARGPROG - Optional description of the survey / program.
+TARGCAT - Catalogue filename.
+TARGID - Specific File Name
+TARGNAME - General File Name
+TARGPRIO - 10.0 for LIFU.
+TARGUSE - T = Target, S = Sky, M = Mask, etc.
+TARGCLASS - Galaxy
+PROGTEMP - Generate a configuration from WASP and input code here.
+	43331 - 120 min obs block. Split into 6 x 1020 (17 min) exposures.
+	41331 - 60 minute block. Split into 3 x 1020s (17 min) exposures.
+	42331 - 90 minute block. Split into 4 x 1020s (17 min) exposures
+OBSTEMP - Generate a code by which dictates the "worst-case" situation the observations can be made.
+	Currently all set to the code: NADEA:
+		Max Seeing 2.0" (LIFU Fibre is 2.6")
+		Minimum Transparency = 0.8
+		Maximum Airmass = 38.68 (1.6)
+		Moon Distance = 0 (algorithm complains if this is not zero, for some reason)
+		Maximum Sky Brightness = 21.7 (minimum setting.)
+GAIA_ID - Identification in Gaia catalogues.
+HEALPIX - Leave empty, apparently. Assigned upon submission.
+IFU_SPAXEL - Also, this is populated by the IFU workflow software.
+IFU_PA - As it says on the tin. Mainly used if no guide star falls in the FOV of the guidance. Need to account for this.
+APS_WL_MIN - Minimum observed wavelength considered.
+APS_WL_MAX - Maximum observed wavelength considered.
+APS_Z - Heliocentric Corrected Redshift.
+APS_SIGMA - Initial guess of the velocity dispersion.
+APS_TEMPL_LIB - Library of Spectral Templates.
+APS_TEMPL_LIB_NORM - Normalise spectral template library.
+APS_PPXF_WL_MIN - Minimum rest-frame wavelength for use by pPXF
+APS_PPXF_WL_MAX - Max rest-frame wavelength for use by pPXF.
+APS_PPXF_MOM - No. of kinematic moments to be extracted.
+APS_PPXF_DEG_ADD - No
+APS_PPXF_DEG_MULT - Default: 4
+APS_PPXF_NUM_MC - No. of MC Simulations to extract pPXF errors. Default: 0
+APS_GAND_MODE - Run GANDALF to extract emission-line-kinematics. Default: 1 (Run normal procedure)
+APS_GAN_ERR - Derive errors on emission-line analysis. (Default: Yes)
+APD_GAND_RED1 - INitial estimate for reddening by dust.
+APS_GAND_RED2 - Second estimate for redenning by dust.
+APS_GAND_EBV - De-redden spectra for galactic extinction. Default: 0 (do not de-redden)
+APS_LS_MODE - Extract indices and convert to SSP prop. Default: 1 (perform normal extraction)
+APS_LS_RED - Spectral resolution (FWHM) of index measurements.
+.
+.
+.
+APS_IFU_SRC_ID - Identifier for sources within IFU.
+APS_IFU_SRC_RA - RA of centre of its IFU source
+APS_IFU_SRC_DEC - Dec of centre of its IFU source
