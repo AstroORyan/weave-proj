@@ -1,0 +1,5 @@
+# Region file format: DS9 version 4.1
+global color=green dashlist=8 3 width=1 font="helvetica 10 normal roman" select=1 highlite=1 dash=0 fixed=0 edit=1 move=1 delete=1 include=1 source=1
+fk5
+# compass(166.8758145,18.3573642,0.885") compass=fk5 {N} {E} 1 1
+# compass(166.8758950,18.3569061,15.835") compass=fk5 {N} {E} 1 1
