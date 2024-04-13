@@ -167,6 +167,5 @@ cython_debug/
 *.gif
 
 # Embargoed Data
-*.csv
 *.pdf
 *.fits.gz
